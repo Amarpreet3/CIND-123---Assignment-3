@@ -1,0 +1,182 @@
+---
+title: "CIND 123: Data Analytics Basic Methods: Assignment-3_F2022"
+output: html_document
+---
+<center> <h1> Assignment 3 (10%) </h1> </center>
+<center> <h2> Total 100 Marks </h2> </center>
+<center> <h3> [Insert your full name] </h3> </center>
+<center> <h3> [Insert course section & student number] </h3> </center>
+---
+
+
+# Instructions 
+
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. Review this website for more details on using R Markdown <http://rmarkdown.rstudio.com>.
+
+Use RStudio for this assignment. Complete the assignment by inserting your  \texttt{R} code wherever you see the string "#INSERT YOUR ANSWER HERE".
+
+When you click the **Knit** button, a document (PDF, Word, or HTML format) will be generated that includes both the assignment content as well as the output of any embedded R code chunks.
+
+**NOTE**: YOU SHOULD NEVER HAVE `install.packages` IN YOUR CODE; OTHERWISE, THE `Knit` OPTION WILL GIVE AN ERROR. COMMENT OUT ALL PACKAGE INSTALLATIONS.
+
+Submit **both**  the `rmd` and generated `output` files. Failing to submit both files will be subject to mark deduction. PDF or HTML is preferred. 
+
+## Sample Question and Solution
+
+Use `seq()` to create the vector $(3, 5, \dots, 29)$.
+
+```{r}
+seq(3, 30, 2)
+seq(3, 29, 2)
+```
+
+
+
+# Question 1 [30 Pts]
+
+## Q1a (10 points) 
+The midterm and final exam grades of some students are given as `c(92,91,67,72,85,81,53,45)` and `c(87,100,65,81,93,77,55,36)`. Set variables `midterm` and `final` respectively. Then find the least-squares line relating the midterm to the final exam 
+
+   Does the assumption of a linear relationship appear to be reasonable in this case? Give reasons for your answer as a comment.
+```{r}
+#INSERT YOUR ANSWER HERE
+
+```
+
+## Q1b (10 points) 
+Plot the midterm as a function of the final exam grades using a scatterplot and graph the least-square line on the same plot. 
+```{r}
+#INSERT YOUR ANSWER HERE
+
+```
+
+## Q1c (10 points) 
+Use the regression line to predict the midterm grade when the final exam grade is 88. 
+```{r}
+#INSERT YOUR ANSWER HERE
+
+```
+
+
+
+# Question 2 [45 Pts]
+
+Please load the Crime data by running the following chunk of code.
+
+You can read more about at this link:
+   - https://rdrr.io/cran/plm/man/Crime.html
+```{r load_data}
+library(plm)
+data(Crime)
+```
+
+## Q2a (5 points) 
+Display the first 5 rows of the `Crime` data, the names of all the variables, and a descriptive summary of each variable. 
+```{r}
+#INSERT YOUR ANSWER HERE
+
+```
+
+## Q2b (5 points) 
+Calculate the mean, variance and standard deviation of the weekly wage in construction (`wcon`) by omitting the missing values, if any. 
+```{r}
+#INSERT YOUR ANSWER HERE
+
+```
+## Q2c-1 (5 points) 
+Use people per square mile (`density`) and police per capita (`polpc`) to build a linear regression model to predict tax per capita (`taxpc`).  
+
+## Q2c-2 (5 points) 
+How can you draw a conclusion from the results? 
+   (Note: Full marks requires comment on the predictors)
+```{r}
+#INSERT YOUR ANSWER HERE
+# Q2c-1
+
+#Q2c-2
+
+```
+
+## Q2d (5 points) 
+
+Based on the output of your model, write an equation using the intercept and coefficients of `density` when `polpc`. Then, use the equation for a case with `density` of 0.4 and `polpc` of 0.0015 to predict its tax per capita.  
+
+```{r}
+#INSERT YOUR ANSWER HERE
+
+```
+
+## Q2e-1 (5 points) 
+Find Pearson correlation between crimes committed per person (`crmrte`) and the probability of arrest (`prbarr`); and between percentage minority in 1980 (`pctmin`) and police per capita (`polpc`). 
+
+## Q2e-2 (5 points) 
+What conclusions can you draw? Write your reasons as comments.
+```{r}
+#INSERT YOUR ANSWER HERE
+
+#Q2e-1
+
+#Q2e-2
+
+```
+
+## Q2f-1 (5 points) 
+Display the correlation matrix of the following variables: 
+- crimes committed per person (`crmrte`), 
+- probability of arrest (`prbarr`),
+- probability of conviction (`prbconv`),
+- police per capita (`polpc`),
+- percentage minority in 1980 (`pctmin`). 
+
+## Q2f-2 (5 points) 
+Write what conclusion you can draw, as comments. 
+   (answer not included, Please grade on student's comments)
+```{r}
+#INSERT YOUR ANSWER HERE
+# Q2f-1
+
+# Q2f-2
+
+```
+
+
+
+## Question 3 [25 Pts]
+
+This question makes use of package "ISwR". Please load `airquality` dataset as following:
+
+```{r}
+# or install.packages("ISwR")
+library(ISwR) 
+data(airquality)
+str(airquality)
+```
+
+
+## Q3a (7.5 points) 
+Use a histogram to assess the normality of the `Wind` variable, then explain why it appears (to some extent) normally distributed. 
+```{r}
+#INSERT YOUR ANSWER HERE
+
+```
+
+## Q3b (7.5 points) 
+Create a comparison boxplot that shows the distribution of `Ozone` in each month. Use different colours for each month. 
+
+```{r}
+#INSERT YOUR ANSWER HERE
+
+```
+
+## Q3c (10 points) 
+Create a pairwise matrix of scatterplots of all the numeric attributes in the `airquality` dataset (i.e., `Ozone`, `Solar.R`, `Wind` and `Temp`.)
+(Hint: investigate `pairs()` function) 
+
+```{r}
+#INSERT YOUR ANSWER HERE
+
+```
+
+
+** End of Assignment **

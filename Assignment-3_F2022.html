@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head></head><body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div>
+
+
+
+<h1 class="title toc-ignore">CIND 123: Data Analytics Basic Methods:
+Assignment-3_F2022</h1>
+
+</div>
+
+
+<center>
+<h1>
+Assignment 3 (10%)
+</h1>
+</center>
+<center>
+<h2>
+Total 100 Marks
+</h2>
+</center>
+<center>
+<h3>
+[Insert your full name]
+</h3>
+</center>
+<center>
+<h3>
+[Insert course section &amp; student number]
+</h3>
+</center>
+<hr/>
+<div class="section level1">
+<h1>Instructions</h1>
+<p>This is an R Markdown document. Markdown is a simple formatting
+syntax for authoring HTML, PDF, and MS Word documents. Review this
+website for more details on using R Markdown <a rel="noopener" href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
+<p>Use RStudio for this assignment. Complete the assignment by inserting
+your code wherever you see the string “#INSERT YOUR ANSWER HERE”.</p>
+<p>When you click the <strong>Knit</strong> button, a document (PDF,
+Word, or HTML format) will be generated that includes both the
+assignment content as well as the output of any embedded R code
+chunks.</p>
+<p><strong>NOTE</strong>: YOU SHOULD NEVER HAVE
+<code>install.packages</code> IN YOUR CODE; OTHERWISE, THE
+<code>Knit</code> OPTION WILL GIVE AN ERROR. COMMENT OUT ALL PACKAGE
+INSTALLATIONS.</p>
+<p>Submit <strong>both</strong> the <code>rmd</code> and generated
+<code>output</code> files. Failing to submit both files will be subject
+to mark deduction. PDF or HTML is preferred.</p>
+<div class="section level2">
+<h2>Sample Question and Solution</h2>
+<p>Use <code>seq()</code> to create the vector <span class="math inline">\((3, 5, \dots, 29)\)</span>.</p>
+<pre class="r"><code>seq(3, 30, 2)</code></pre>
+<pre><code>##  [1]  3  5  7  9 11 13 15 17 19 21 23 25 27 29</code></pre>
+<pre class="r"><code>seq(3, 29, 2)</code></pre>
+<pre><code>##  [1]  3  5  7  9 11 13 15 17 19 21 23 25 27 29</code></pre>
+</div>
+</div>
+<div class="section level1">
+<h1>Question 1 [30 Pts]</h1>
+<div class="section level2">
+<h2>Q1a (10 points)</h2>
+<p>The midterm and final exam grades of some students are given as
+<code>c(92,91,67,72,85,81,53,45)</code> and
+<code>c(87,100,65,81,93,77,55,36)</code>. Set variables
+<code>midterm</code> and <code>final</code> respectively. Then find the
+least-squares line relating the midterm to the final exam</p>
+<p>Does the assumption of a linear relationship appear to be reasonable
+in this case? Give reasons for your answer as a comment.</p>
+<pre class="r"><code>#INSERT YOUR ANSWER HERE</code></pre>
+</div>
+<div class="section level2">
+<h2>Q1b (10 points)</h2>
+<p>Plot the midterm as a function of the final exam grades using a
+scatterplot and graph the least-square line on the same plot.</p>
+<pre class="r"><code>#INSERT YOUR ANSWER HERE</code></pre>
+</div>
+<div class="section level2">
+<h2>Q1c (10 points)</h2>
+<p>Use the regression line to predict the midterm grade when the final
+exam grade is 88.</p>
+<pre class="r"><code>#INSERT YOUR ANSWER HERE</code></pre>
+</div>
+</div>
+<div class="section level1">
+<h1>Question 2 [45 Pts]</h1>
+<p>Please load the Crime data by running the following chunk of
+code.</p>
+<p>You can read more about at this link: - <a rel="noopener" href="https://rdrr.io/cran/plm/man/Crime.html" class="uri">https://rdrr.io/cran/plm/man/Crime.html</a></p>
+<pre class="r"><code>library(plm)
+data(Crime)</code></pre>
+<div class="section level2">
+<h2>Q2a (5 points)</h2>
+<p>Display the first 5 rows of the <code>Crime</code> data, the names of
+all the variables, and a descriptive summary of each variable.</p>
+<pre class="r"><code>#INSERT YOUR ANSWER HERE</code></pre>
+</div>
+<div class="section level2">
+<h2>Q2b (5 points)</h2>
+<p>Calculate the mean, variance and standard deviation of the weekly
+wage in construction (<code>wcon</code>) by omitting the missing values,
+if any.</p>
+<pre class="r"><code>#INSERT YOUR ANSWER HERE</code></pre>
+</div>
+<div class="section level2">
+<h2>Q2c-1 (5 points)</h2>
+<p>Use people per square mile (<code>density</code>) and police per
+capita (<code>polpc</code>) to build a linear regression model to
+predict tax per capita (<code>taxpc</code>).</p>
+</div>
+<div class="section level2">
+<h2>Q2c-2 (5 points)</h2>
+<p>How can you draw a conclusion from the results? (Note: Full marks
+requires comment on the predictors)</p>
+<pre class="r"><code>#INSERT YOUR ANSWER HERE
+# Q2c-1
+
+#Q2c-2</code></pre>
+</div>
+<div class="section level2">
+<h2>Q2d (5 points)</h2>
+<p>Based on the output of your model, write an equation using the
+intercept and coefficients of <code>density</code> when
+<code>polpc</code>. Then, use the equation for a case with
+<code>density</code> of 0.4 and <code>polpc</code> of 0.0015 to predict
+its tax per capita.</p>
+<pre class="r"><code>#INSERT YOUR ANSWER HERE</code></pre>
+</div>
+<div class="section level2">
+<h2>Q2e-1 (5 points)</h2>
+<p>Find Pearson correlation between crimes committed per person
+(<code>crmrte</code>) and the probability of arrest
+(<code>prbarr</code>); and between percentage minority in 1980
+(<code>pctmin</code>) and police per capita (<code>polpc</code>).</p>
+</div>
+<div class="section level2">
+<h2>Q2e-2 (5 points)</h2>
+<p>What conclusions can you draw? Write your reasons as comments.</p>
+<pre class="r"><code>#INSERT YOUR ANSWER HERE
+
+#Q2e-1
+
+#Q2e-2</code></pre>
+</div>
+<div class="section level2">
+<h2>Q2f-1 (5 points)</h2>
+<p>Display the correlation matrix of the following variables: - crimes
+committed per person (<code>crmrte</code>), - probability of arrest
+(<code>prbarr</code>), - probability of conviction
+(<code>prbconv</code>), - police per capita (<code>polpc</code>), -
+percentage minority in 1980 (<code>pctmin</code>).</p>
+</div>
+<div class="section level2">
+<h2>Q2f-2 (5 points)</h2>
+<p>Write what conclusion you can draw, as comments. (answer not
+included, Please grade on student’s comments)</p>
+<pre class="r"><code>#INSERT YOUR ANSWER HERE
+# Q2f-1
+
+# Q2f-2</code></pre>
+</div>
+<div class="section level2">
+<h2>Question 3 [25 Pts]</h2>
+<p>This question makes use of package “ISwR”. Please load
+<code>airquality</code> dataset as following:</p>
+<pre class="r"><code># or install.packages(&quot;ISwR&quot;)
+library(ISwR) 
+data(airquality)
+str(airquality)</code></pre>
+<pre><code>## &#39;data.frame&#39;:    153 obs. of  6 variables:
+##  $ Ozone  : int  41 36 12 18 NA 28 23 19 8 NA ...
+##  $ Solar.R: int  190 118 149 313 NA NA 299 99 19 194 ...
+##  $ Wind   : num  7.4 8 12.6 11.5 14.3 14.9 8.6 13.8 20.1 8.6 ...
+##  $ Temp   : int  67 72 74 62 56 66 65 59 61 69 ...
+##  $ Month  : int  5 5 5 5 5 5 5 5 5 5 ...
+##  $ Day    : int  1 2 3 4 5 6 7 8 9 10 ...</code></pre>
+</div>
+<div class="section level2">
+<h2>Q3a (7.5 points)</h2>
+<p>Use a histogram to assess the normality of the <code>Wind</code>
+variable, then explain why it appears (to some extent) normally
+distributed.</p>
+<pre class="r"><code>#INSERT YOUR ANSWER HERE</code></pre>
+</div>
+<div class="section level2">
+<h2>Q3b (7.5 points)</h2>
+<p>Create a comparison boxplot that shows the distribution of
+<code>Ozone</code> in each month. Use different colours for each
+month.</p>
+<pre class="r"><code>#INSERT YOUR ANSWER HERE</code></pre>
+</div>
+<div class="section level2">
+<h2>Q3c (10 points)</h2>
+<p>Create a pairwise matrix of scatterplots of all the numeric
+attributes in the <code>airquality</code> dataset (i.e.,
+<code>Ozone</code>, <code>Solar.R</code>, <code>Wind</code> and
+<code>Temp</code>.) (Hint: investigate <code>pairs()</code>
+function)</p>
+<pre class="r"><code>#INSERT YOUR ANSWER HERE</code></pre>
+<p>** End of Assignment **</p>
+</div>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="module" src="https://s.brightspace.com/lib/bsi/20.22.12-222/unbundled/mathjax.js"></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() {
+					if (document.querySelector('math') || /\$\$|\\\(|\\\[|\\begin{|\\ref{|\\eqref{/.test(document.body.innerHTML)) {
+						document.querySelectorAll('mspace[linebreak="newline"]').forEach(elm => {
+							elm.setAttribute('style', 'display: block; height: 0.5rem;');
+						});
+
+						window.D2L.MathJax.loadMathJax({
+							'outputScale': 1.3,
+							'renderLatex': true
+						});
+					}
+				});</script><script type="module" src="https://s.brightspace.com/lib/bsi/20.22.12-222/unbundled/prism.js"></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() {
+					document.querySelectorAll('.d2l-code').forEach(code => {
+						window.D2L.Prism.formatCodeElement(code);
+					});
+				});</script></body></html>
